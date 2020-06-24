@@ -126,7 +126,7 @@ func main() {
 		tax = totalTax - lastTotalTax
 		finalIncome = profile.SalaryMonthly - getInsurance(profile) - tax
 		lastTotalTax = totalTax
-		fmt.Printf("%4d月份 | %-12.f | %-8.f | %-12.f | %-12.f | %-8.f | %-4.2f | %-10.f | %-12.f | %-10.f | %-12.f\n", i+1, totalIncome, totalInsurance, totalDeduction, totalBaseNum, taxIncome, taxRate, deductionNumber, totalTax, tax, finalIncome)
+		fmt.Printf("%4d月份 | %-12.f | %-8.f | %-12.f | %-12.f | %-8.f | %-4.2f | %-10.f | %-12.f | %-10.f | %-12.f\n", i, totalIncome, totalInsurance, totalDeduction, totalBaseNum, taxIncome, taxRate, deductionNumber, totalTax, tax, finalIncome)
 	}
 }
 
