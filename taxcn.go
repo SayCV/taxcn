@@ -112,7 +112,7 @@ func main() {
 		return
 	}
 
-	for i := int64(0); i <= profile.CalcMonths; i++ {
+	for i := int64(1); i <= profile.CalcMonths; i++ {
 		if i == profile.YearEndBonusDate {
 			totalIncome += profile.SalaryMonthly * profile.YearEndBonusRatio
 		}
